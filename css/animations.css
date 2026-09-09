@@ -1,0 +1,40 @@
+/* ==========================================================================
+   ZYRA STORE - TIMINGS Y ANIMACIONES DE ENTRADA (PREMIUM)
+   ========================================================================== */
+
+@keyframes scaleUpReveal {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.swiss-header {
+    animation: scaleUpReveal 1.2s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.liquid-center-stage {
+    animation: scaleUpReveal 1.5s cubic-bezier(0.16, 1, 0.3, 1) 0.15s both;
+}
+
+.swiss-footer-bar {
+    animation: scaleUpReveal 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.3s both;
+}
+
+/* Brillo de la línea de progreso */
+@keyframes linePulseGlow {
+    from {
+        box-shadow: 0 0 4px var(--accent-glow);
+    }
+    to {
+        box-shadow: 0 0 10px var(--accent-pure-white);
+    }
+}
+
+.swiss-progress-line-fill {
+    animation: linePulseGlow 1.8s infinite alternate ease-in-out;
+}

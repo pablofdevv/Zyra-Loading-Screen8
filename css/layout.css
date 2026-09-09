@@ -1,0 +1,136 @@
+/* ==========================================================================
+   ZYRA STORE - DISEÑO DE LAYOUT Y POSICIONES SUIZAS (PREMIUM)
+   ========================================================================== */
+
+/* Overlays Cinemáticos */
+.panel-vignette {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 50% 50%, rgba(3, 3, 3, 0) 0%, rgba(3, 3, 3, 0.95) 100%);
+    z-index: 3;
+    pointer-events: none;
+}
+
+.scanlines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        rgba(18, 16, 16, 0) 50%, 
+        rgba(0, 0, 0, 0.08) 50%
+    );
+    background-size: 100% 4px;
+    z-index: 4;
+    pointer-events: none;
+    opacity: 0.25;
+}
+
+.bg-video-el {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+/* Contenedor General */
+.liquid-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+    padding: 4.5rem;
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+}
+
+/* Cabecera Minimalista Superior */
+.swiss-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 20;
+}
+
+/* --- AREA CENTRAL: BLOB VECTORIAL --- */
+.liquid-center-stage {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+.blob-canvas-wrapper {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#blob-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.blob-logo-overlay {
+    position: relative;
+    z-index: 5;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* --- PIE DE PÁGINA SUIZO --- */
+.swiss-footer-bar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 20;
+}
+
+.swiss-footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-col {
+    display: flex;
+    align-items: center;
+}
+
+.col-left {
+    width: 38%;
+    justify-content: flex-start;
+}
+
+.col-center {
+    width: 24%;
+    justify-content: center;
+}
+
+.col-right {
+    width: 38%;
+    justify-content: flex-end;
+}

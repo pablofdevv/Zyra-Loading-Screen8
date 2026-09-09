@@ -1,0 +1,31 @@
+/* ==========================================================================
+   ZYRA STORE - VARIABLES CSS Y COLORES SUISOS MATE (PREMIUM)
+   ========================================================================== */
+
+:root {
+    /* Paleta Editorial Minimalista */
+    --bg-pure-black: #030303;
+    --bg-glass-card: rgba(7, 7, 7, 0.45);
+    
+    /* Bordes Finos */
+    --border-swiss: 1px solid rgba(255, 255, 255, 0.025);
+    --border-swiss-active: 1px solid rgba(223, 186, 95, 0.35);
+    
+    /* Color de Acento (Oro Bronce / Gold) */
+    --accent-pure-white: #dfba5f;
+    --accent-glow: rgba(223, 186, 95, 0.22);
+    
+    /* Colores del texto */
+    --text-primary: #fafafa;
+    --text-secondary: #a1a1aa;
+    --text-muted: #4e4e52;
+    
+    /* Tipografías Futura Bold Italic Style */
+    --font-heading: 'Montserrat', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    --font-size-base: 16px;
+    
+    /* Transiciones */
+    --transition-smooth: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    --blur-intensity: 14px;
+}

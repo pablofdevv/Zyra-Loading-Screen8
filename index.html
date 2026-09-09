@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zyra Store - Liquid Metal Blob</title>
+    
+    <!-- Google Fonts: Montserrat (Futura Bold Italic style) & Inter (Body text) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,300;0,400;0,600;0,800;0,900;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <!-- Hojas de Estilos Modulares (Prompt Maestro) -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/theme.css">
+</head>
+<body>
+    <!-- Video de Fondo (Opcional) -->
+    <video id="bg-video" loop muted playsinline class="bg-video-el hidden"></video>
+
+    <!-- Capas Cinemáticas de Fondo -->
+    <div class="panel-vignette"></div>
+    <div class="scanlines"></div>
+
+    <!-- CONTENEDOR PRINCIPAL -->
+    <main class="liquid-container" id="loading-container">
+        
+        <!-- CABECERA SUPERIOR MINIMALISTA -->
+        <header class="swiss-header">
+            <h1 class="swiss-brand-title" id="server-claim">ZYRA STORE</h1>
+            <div class="swiss-status-pill">
+                <span class="status-dot"></span>
+                <span class="status-label">SYS_READY</span>
+            </div>
+        </header>
+
+        <!-- AREA CENTRAL: Burbuja de Metal Líquido (Canvas Morphing) -->
+        <section class="liquid-center-stage">
+            <div class="blob-canvas-wrapper">
+                <!-- Canvas de la burbuja morphing -->
+                <canvas id="blob-canvas"></canvas>
+                <!-- Logotipo proyectado en el centro geométrico de la burbuja -->
+                <div id="logo-container" class="blob-logo-overlay">
+                    <!-- Logo Z inyectado -->
+                </div>
+            </div>
+        </section>
+
+        <!-- PIE DE PÁGINA: Fila de Control e Información Estilo Suizo -->
+        <footer class="swiss-footer-bar">
+            
+            <!-- Fina línea horizontal que actúa como Barra de Carga -->
+            <div class="swiss-progress-line-track">
+                <div class="swiss-progress-line-fill" id="horizontal-progress-bar"></div>
+            </div>
+
+            <!-- Fila de Datos del Dock -->
+            <div class="swiss-footer-content">
+                
+                <!-- Columna Izquierda: Progreso y Logs -->
+                <div class="footer-col col-left">
+                    <div class="loading-status-group">
+                        <span id="progress-val-text" class="swiss-pct-text">[ 0% LOADING ]</span>
+                        <span id="log-text" class="swiss-log-text">> Initializing connection sequences...</span>
+                    </div>
+                </div>
+
+                <!-- Columna Central: Redes Oficiales -->
+                <div class="footer-col col-center" id="socials-panel">
+                    <nav class="swiss-links-nav" id="social-links-grid">
+                        <!-- Enlaces inyectados -->
+                    </nav>
+                </div>
+
+                <!-- Columna Derecha: Reproductor de Audio Compacto -->
+                <div class="footer-col col-right" id="music-card-wrapper">
+                    <div class="swiss-player-wrapper">
+                        <!-- Metadatos de pista -->
+                        <div class="inline-track-meta">
+                            <span class="music-active-indicator"></span>
+                            <div class="track-scroller-box">
+                                <span class="track-label" id="track-title">LOADING STREAMING AUDIO...</span>
+                            </div>
+                        </div>
+
+                        <!-- Botones de Acción -->
+                        <div class="inline-music-controls">
+                            <button id="play-pause-btn" class="player-action-btn" aria-label="Play/Pause">
+                                <svg id="play-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="12" height="12">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
+                                <svg id="pause-icon" class="hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="12" height="12">
+                                    <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+                                </svg>
+                            </button>
+                            
+                            <div class="player-volume-slider-group">
+                                <button id="volume-mute-btn" class="player-vol-btn" aria-label="Mute">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="player-vol-svg">
+                                        <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/>
+                                    </svg>
+                                </button>
+                                <input type="range" id="volume-slider" min="0" max="1" step="0.05" value="0.15" class="player-vol-range">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- Elemento Audio Oculto -->
+    <audio id="bg-audio" loop preload="auto"></audio>
+
+    <!-- Scripts Modulares -->
+    <script src="js/config.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/music.js"></script>
+    <script src="js/loading.js"></script>
+    <script src="js/progress.js"></script>
+    <script src="js/news.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

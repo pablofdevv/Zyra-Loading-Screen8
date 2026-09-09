@@ -1,0 +1,58 @@
+/* ==========================================================================
+   ZYRA STORE - ADAPTABILIDAD RESPONSIVA SUIZA (PREMIUM)
+   ========================================================================== */
+
+@media (max-width: 900px) {
+    .liquid-container {
+        padding: 2.5rem;
+    }
+    .blob-canvas-wrapper {
+        width: 380px;
+        height: 380px;
+    }
+}
+
+@media (max-width: 750px) {
+    .liquid-container {
+        padding: 1.5rem;
+        justify-content: flex-start;
+        gap: 30px;
+        overflow-y: auto;
+    }
+
+    .swiss-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .liquid-center-stage {
+        margin: 20px 0;
+        width: 320px;
+        height: 320px;
+    }
+
+    .blob-canvas-wrapper {
+        width: 300px;
+        height: 300px;
+    }
+
+    .blob-logo-overlay img {
+        max-height: 80px;
+    }
+
+    .swiss-footer-bar {
+        gap: 15px;
+    }
+
+    .swiss-footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .footer-col {
+        width: 100% !important;
+        justify-content: flex-start !important;
+    }
+}
